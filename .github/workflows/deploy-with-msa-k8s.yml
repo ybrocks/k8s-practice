@@ -35,7 +35,7 @@ jobs:
       - name: apigateway build and push
         env:
           REGISTRY: 346903264902.dkr.ecr.ap-northeast-2.amazonaws.com
-          REPOSITORY: cho-ns/apigateway
+          REPOSITORY: chokanghyun-ns/apigateway
           IMAGE_TAG: latest
         run: |
           docker build \
@@ -51,7 +51,7 @@ jobs:
       - name: member build and push
         env:
           REGISTRY: 346903264902.dkr.ecr.ap-northeast-2.amazonaws.com
-          REPOSITORY: cho-ns/member
+          REPOSITORY: chokanghyun-ns/member
           IMAGE_TAG: latest
         run: |
           docker build \
@@ -67,7 +67,7 @@ jobs:
       - name: ordering build and push
         env:
           REGISTRY: 346903264902.dkr.ecr.ap-northeast-2.amazonaws.com
-          REPOSITORY: cho-ns/ordering
+          REPOSITORY: chokanghyun-ns/ordering
           IMAGE_TAG: latest
         run: |
           docker build \
@@ -83,7 +83,7 @@ jobs:
       - name: product build and push
         env:
           REGISTRY: 346903264902.dkr.ecr.ap-northeast-2.amazonaws.com
-          REPOSITORY: cho-ns/product
+          REPOSITORY: chokanghyun-ns/product
           IMAGE_TAG: latest
         run: |
           docker build \
